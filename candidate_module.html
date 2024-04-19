@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo Candidato</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h2>Módulo Candidato</h2>
+  <form id="candidate-form">
+    <label for="email">Usuario (Correo Electrónico):</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="firstname">Nombre:</label>
+    <input type="text" id="firstname" name="firstname" required>
+
+    <label for="lastname">Apellido:</label>
+    <input type="text" id="lastname" name="lastname" required>
+
+    <label for="birthdate">Fecha Nacimiento:</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+
+    <label for="document-type">Tipo Documento:</label>
+    <select id="document-type" name="document-type">
+      <option value="cc">Cédula de Ciudadanía (cc)</option>
+      <option value="ti">Tarjeta de Identidad (ti)</option>
+      <option value="ce">Cédula de Extranjería</option>
+    </select>
+
+    <label for="document-number">Número Documento:</label>
+    <input type="text" id="document-number" name="document-number" required>
+
+    <input type="submit" value="Enviar">
+  </form>
+</div>
+</body>
+</html>
